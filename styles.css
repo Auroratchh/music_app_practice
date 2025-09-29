@@ -5,14 +5,61 @@
 }
 
 .music-player {
-    background: yellow;
+    background: rgb(255, 255, 255);
 }
 
-@media (orientation: landscape) and (width >= 800px) and (width <= 1920px){}
+@media screen and (min-width: 800px){
+    #mobile-nav{
+        display: none;
+    }
 
-@media(orientation: landscape) and (800px <= width <= 1920px) {
+    .container{
+        height: 100vh;
+    }
+
     .music-player{
-        background: red;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+
+    }
+
+    #main-content{
+        width:100%;
+        max-height: 400px;
+        padding: 0 5%;
+        display: grid;
+        grid-template-columns: 75% 25%;
+
+    }
+
+    #song-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #playlist{
+        position: relative;
+        max-height: 100%;
+        overflow-y: scroll;
+
+    }
+
+    .song-card{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .image-song-card{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
     }
 }
 

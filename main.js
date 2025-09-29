@@ -9,14 +9,14 @@ const forward = document.getElementById("forward")
 
 const songs = [
         {
-            song_name : "cancion CHIDA",
-            artist_name: "artista 1",
-            song_url: "./media/song.mp3",
-            caratula: "https://picsum.photos/200"
+            song_name : "Good luck, Babe!",
+            artist_name: "Chappell Roan",
+            song_url: "media\Good luck, Babe!.mp3",
+            caratula: "media/chapell.jpg"
         },
         {
-            song_name : "cancion CHIDA 2",
-            artist_name: "artista 1",
+            song_name : "Manchild",
+            artist_name: "Sabrina Carpenter",
             song_url: "./media/song_2.mp3",
             caratula: "https://picsum.photos/200"
         },

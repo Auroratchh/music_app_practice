@@ -3,42 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ENHA MUSIC</title>
     <link rel="stylesheet" href="./styles.css">
-    <script type="module" src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/372c7aba57.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
-                </div>
-                <div class="circle">
-                    <span>bars</span>
-                </div>
-            </nav>
-
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
+    <div id="container">
+        <div id="nav">
+            <div id="logo-nav">
+                <img src="media/logo.png" alt="">
+            <p>ENHA MUSIC</p>
             </div>
-
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
+            <div id="input-nav">
+                <input type="search" id="search" >
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
+            <div id="options-nav">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-window-restore"></i>
+                
+                <i class="fa-solid fa-xmark"></i>
             </div>
-
         </div>
+        
+    <div id="content">
+        <div id="side-bar">
+            <div id="search-content">
+                <input type="search" id="search-content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="info-content">
+                <div id="explore">
+                <i class="fa-solid fa-map-pin"></i>
+                <a href="#">Explora</a>
+            </div>
+            <div id="playlist-icon">
+                <i class="fa-regular fa-circle"></i>
+                <a href="#">Mis playlist</a>
+            </div>
+            <div id="heart">
+                <i class="fa-regular fa-heart"></i>
+                <a href="#">Me gusta</a>
+            </div>
+            </div>
+
+            <div id="playlist">
+                <div id="title">
+                    <H2>Playlist</H2>
+                <i class="fa-solid fa-plus"></i>
+                </div>
+                <div id="playlist-title">
+                    <h4>Youu</h4>
+                    <h4>You</h4>
+                    <h4>Yoii</h4>
+                    <h4>IASD</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="principal">
+            <div id="content-new">
+                <h4>New album</h4>
+                <h1>MAN'S BEST FRIEND</h1>
+                <h4>Sabrina Carpenter</h4>
+            </div>
+        </div>
+
+
+        
     </div>
 </body>
 </html>
