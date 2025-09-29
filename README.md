@@ -1,10 +1,15 @@
-# Titulo H1
+# Music App
 
-###### Titulo H6
+**Aplicación para reproducir canciones** 
+__Music__
+###### Varios artistas famosos se encuentran registrados para que reproduzcan sus canciones famosas, albumes y playlist para generar oyentes mensuales. Apoyen a los artistas talentosos para que tengan mejores resultados.
 
-**NEGRITAS** __NEGRITAS__
-*CURSIVA* _CURSIVA_
 
-___CURSIVA Y NEGRITAS___ ***CURSIVA Y NEGRITAS***
+*ARTISTAS CONOCIDOS COMO:*
+
+___SABRINA CARPENTER___ //
+***OLIVIA RODRIGO*** //
+___ENHYPEN___
+
 
 [link a un repositorio](https://github.com/Auroratchh/music_app_practice.git)
