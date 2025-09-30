@@ -1,12 +1,5 @@
-import createPlaylist from "./utils/playlist.js";
 
-let progress_bar = document.getElementById("progress");
-let media = document.getElementById("media");
-let play_btn = document.getElementById("play");
-const song_img = document.getElementById("song-img");
-const lastest = document.getElementById("lastest");
-const forward = document.getElementById("forward")
-
+import player from "./app/player";
 const songs = [
         {
             song_name : "Good luck, Babe!",
@@ -32,18 +25,17 @@ const last = [];
 
 const playlist = createPlaylist(songs.length);
 
-let playingNow;
 
 window.addEventListener('DOMContentLoaded', () => {
-    playingNow = playlist.pop()
-    loadSong(playingNow);
+    audioController.initializaPlayer(createPlaylist(songs, null));
+    console.log(audioController._nextSongs);
+    console.log(audioController._actualSong);
+    loadSong(audioController._actualSong);
 })
 
 function loadSong(i){
     const title = document.getElementById("title");
     const artist = document.getElementById("artist");
-
-    const now = songs[i];
 
     media.src = now.song_url;
     title.innerText = now.song_name;
